@@ -1,0 +1,87 @@
+body { font-family: sans-serif; 
+    max-width: 900px; 
+    margin: auto; 
+    padding: 10px; 
+    text-align: center; }
+
+#lista { 
+    display: grid;  
+    grid-template-columns: repeat(auto-fill, minmax(110px, 1fr)); 
+    gap: 10px; 
+}
+
+
+button { 
+    background: white; 
+    border: 2px solid #ccc; 
+    border-radius: 10px; 
+    cursor: pointer; 
+    text-transform: capitalize; 
+}
+button:hover {
+    border-color: crimson; 
+    transform: translateY(-2px);
+}
+
+
+button.activo { 
+    border-color: crimson; 
+    background: #fee;
+}
+
+
+img { width: 90px; }
+
+
+#mas { 
+    margin: 20px; 
+    padding: 10px 20px; 
+}
+dialog { 
+    width: min(700px, 94vw);
+    border: 0; 
+    border-radius: 14px; 
+    padding: 0;
+}
+
+dialog::backdrop { 
+    background: rgba(0, 0, 0, .6); 
+}
+.cont { 
+    padding: 20px;
+}
+
+#cerrar { float: right; }
+
+#foto { width: 180px; }
+
+#nombre {
+    text-transform: capitalize; 
+    margin: 0; 
+}
+#arbol { overflow-x: auto; }
+
+
+#arbol > .rama { 
+    width: max-content; 
+    margin: auto; 
+}
+
+
+.rama { 
+    display: flex; 
+    align-items: center;
+}
+
+
+.rama > div { 
+    display: flex;
+    flex-direction: column; 
+    gap: 8px; 
+}
+
+
+.flecha { font-size: .8rem; 
+    color: crimson; 
+    margin: 0 6px; 
+}
